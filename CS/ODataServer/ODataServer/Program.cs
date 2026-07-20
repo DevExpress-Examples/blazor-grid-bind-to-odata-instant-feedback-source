@@ -24,8 +24,6 @@ builder.Services.AddControllers().AddOData(options => options
 
 var app = builder.Build();
 
-app.UseCors("AllowWeb");
-
 app.UseRouting();
 
 app.MapControllers();
