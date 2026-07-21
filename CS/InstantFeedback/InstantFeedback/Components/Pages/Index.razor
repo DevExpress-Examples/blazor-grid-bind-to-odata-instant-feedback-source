@@ -37,7 +37,7 @@
             context.AttachTo("Products", product);
             context.UpdateObject(product);
         }
-        await Task.Run(() => context.SaveChanges());
+        await context.SaveChangesAsync();
     }
 
     async Task OnDataItemDeleting(GridDataItemDeletingEventArgs e) {
@@ -46,7 +46,7 @@
         var product = new Product { Product_ID = id };
         context.AttachTo("Products", product);
         context.DeleteObject(product);
-        await Task.Run(() => context.SaveChanges());
+        await context.SaveChangesAsync();
     }
 
     public void Dispose() {
