@@ -21,31 +21,26 @@
 @code {
     ODataInstantFeedbackSource ODataSource { get; set; }
 
-    protected override void OnInitialized()
-    {
+    protected override void OnInitialized() {
         ODataSource = new ODataInstantFeedbackSource();
         ODataSource.KeyExpression = "Product_ID";
         ODataSource.GetSource += (sender, e) => e.Query = new ProductsContext().Products;
     }
 
-    async Task OnEditModelSaving(GridEditModelSavingEventArgs e)
-    {
+    async Task OnEditModelSaving(GridEditModelSavingEventArgs e) {
         var product = (Product)e.EditModel;
         var context = new ProductsContext();
-        if (e.IsNew)
-        {
+        if(e.IsNew) {
             context.AddObject("Products", product);
         }
-        else
-        {
+        else {
             context.AttachTo("Products", product);
             context.UpdateObject(product);
         }
         await Task.Run(() => context.SaveChanges());
     }
 
-    async Task OnDataItemDeleting(GridDataItemDeletingEventArgs e)
-    {
+    async Task OnDataItemDeleting(GridDataItemDeletingEventArgs e) {
         var id = (int)e.Grid.GetDataItemValue(e.DataItem, "Product_ID");
         var context = new ProductsContext();
         var product = new Product { Product_ID = id };
@@ -54,8 +49,7 @@
         await Task.Run(() => context.SaveChanges());
     }
 
-    public void Dispose()
-    {
+    public void Dispose() {
         ODataSource?.Dispose();
     }
 }
