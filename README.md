@@ -1,6 +1,6 @@
 # Blazor Grid - Bind to OData Instant Feedback Data Source
 
-This example uses an [OData Instant Feedback data source](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#data-source-types) to bind the [DevExpress Blazor Grid UI component](https://docs.devexpress.com/Blazor/403143/components/grid) to data. The data source retrieves data on demand in background threads to keep Grid UI responsive. It also reduces memory consumption and improves performance when working with large data collections.
+This example binds the [DevExpress Blazor Grid UI component](https://docs.devexpress.com/Blazor/403143/components/grid) to an [OData Instant Feedback data source](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#data-source-types). The source retrieves records on demand in background threads to keep Grid UI responsive. It reduces memory consumption and improves performance when working with large data collections.
 
 ![Bind DevExpress Blazor Grid to OData Instant Feedback Data Source](./blazor-grid-bind-to-odata.png)
 
@@ -9,7 +9,7 @@ This example uses an [OData Instant Feedback data source](https://docs.devexpres
 1. Run the **ODataServer** application.
 2. Run the **InstantFeedback** application.
 
-As a result, **InstantFeedback** connects to **ODataServer** at `https://localhost:5006/odata`.
+**InstantFeedback** connects to **ODataServer** at `https://localhost:5006/odata`. If port `5006` is already in use, update URLs in [Program.cs](./CS/ODataServer/ODataServer/Program.cs#L9) and [OrdersContext.cs](./CS/InstantFeedback/InstantFeedback/Models/OrdersContext.cs#L5) before you run the application.
 
 ## Overview
 
@@ -17,7 +17,7 @@ The [DevExpress Blazor Grid](https://docs.devexpress.com/Blazor/403143/component
 
 ### Bind the Grid to an Instant Feedback Data Source
 
-In this example, the DevExpress Blazor Grid retrieves data from a separate [OData](https://learn.microsoft.com/en-us/odata/) service. To bind our Grid component to this data, you must:
+In this example, the DevExpress Blazor Grid retrieves data from a separate [OData](https://learn.microsoft.com/en-us/odata/) service. To bind our Blazor Grid component to such a service, you must:
 
 1. Add the following NuGet package to your project: [Microsoft.OData.Client](https://www.nuget.org/packages/Microsoft.OData.Client/)
 
@@ -80,4 +80,3 @@ In this example, the DevExpress Blazor Grid retrieves data from a separate [ODat
 
 - [Server Mode Data Processing](https://github.com/DevExpress-Examples/blazor-grid-server-mode-data)
 - [Bind to an Instant Feedback Data Source Using Entity Framework Core](https://github.com/DevExpress-Examples/blazor-grid-bind-to-instant-feedback-data-source)
-
