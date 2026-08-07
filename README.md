@@ -65,15 +65,15 @@ In this example, the DevExpress Blazor Grid retrieves data from an [OData](https
 ## Files to Review
 
 **InstantFeedback**: 
-- [Index.razor](.\CS\InstantFeedback\InstantFeedback\Components\Pages\Index.razor)
-- [Order.cs](.\CS\InstantFeedback\InstantFeedback\Models\Order.cs)
-- [OrdersContext.cs](.\CS\InstantFeedback\InstantFeedback\Models\OrdersContext.cs)
+- [Index.razor](./CS/InstantFeedback/InstantFeedback/Components/Pages/Index.razor)
+- [Order.cs](./CS/InstantFeedback/InstantFeedback/Models/Order.cs)
+- [OrdersContext.cs](./CS/InstantFeedback/InstantFeedback/Models/OrdersContext.cs)
 
 **ODataServer**:
-- [OrdersController.cs](.\CS\ODataServer\ODataServer\Controllers\OrdersController.cs)
-- [Order.cs](.\CS\ODataServer\ODataServer\Models\Order.cs)
-- [NorthwindContext.cs](.\CS\ODataServer\ODataServer\Models\NorthwindContext.cs)
-- [Program.cs](.\CS\ODataServer\ODataServer\Program.cs)
+- [OrdersController.cs](./CS/ODataServer/ODataServer/Controllers/OrdersController.cs)
+- [Order.cs](./CS/ODataServer/ODataServer/Models/Order.cs)
+- [NorthwindContext.cs](./CS/ODataServer/ODataServer/Models/NorthwindContext.cs)
+- [Program.cs](./CS/ODataServer/ODataServer/Program.cs)
 
 ## Documentation
 
