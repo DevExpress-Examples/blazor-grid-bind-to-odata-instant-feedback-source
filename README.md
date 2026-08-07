@@ -1,3 +1,8 @@
+<!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/1300359366/26.1.3%2B)
+[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
+<!-- default badges end -->
 # Blazor Grid - Bind to OData Instant Feedback Data Source
 
 This example binds the [DevExpress Blazor Grid UI component](https://docs.devexpress.com/Blazor/403143/components/grid) to an [OData Instant Feedback data source](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#data-source-types). The data source retrieves records on demand in background threads to maintain app responsiveness. It reduces memory consumption and improves overall performance when working with large collections.
@@ -78,3 +83,10 @@ In this example, the DevExpress Blazor Grid retrieves data from an [OData](https
 
 - [Server Mode Data Processing](https://github.com/DevExpress-Examples/blazor-grid-server-mode-data)
 - [Bind to an Instant Feedback Data Source Using Entity Framework Core](https://github.com/DevExpress-Examples/blazor-grid-bind-to-instant-feedback-data-source)
+<!-- feedback -->
+## Does This Example Address Your Development Requirements/Objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=draft-blazor-grid-bind-to-odata&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=draft-blazor-grid-bind-to-odata&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
