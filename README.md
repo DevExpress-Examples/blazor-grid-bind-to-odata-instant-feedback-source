@@ -1,21 +1,21 @@
 # Blazor Grid - Bind to OData Instant Feedback Data Source
 
-This example binds the [DevExpress Blazor Grid UI component](https://docs.devexpress.com/Blazor/403143/components/grid) to an [OData Instant Feedback data source](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#data-source-types). The data source retrieves records on demand in background threads to keep Grid UI responsive. It reduces memory consumption and improves performance when working with large collections.
+This example binds the [DevExpress Blazor Grid UI component](https://docs.devexpress.com/Blazor/403143/components/grid) to an [OData Instant Feedback data source](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#data-source-types). The data source retrieves records on demand in background threads to maintain app responsiveness. It reduces memory consumption and improves overall performance when working with large collections.
 
 ![Bind DevExpress Blazor Grid to OData Instant Feedback Data Source](./blazor-grid-bind-to-odata.png)
 
-**Note**: Instant Feedback data sources impose limitations on Grid features. Refer to the following topic for additional information: [Bind Blazor Grid to Server Mode Data Sources](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#limitations).
+**Note**: Instant Feedback data sources impose limitations on available Grid features. Refer to the following topic for additional information in this regard: [Bind Blazor Grid to Server Mode Data Sources](https://docs.devexpress.com/Blazor/405842/components/grid/bind-to-data/server-mode#limitations).
 
 ## Quick Start
 
 1. Run the **ODataServer** application.
 2. Run the **InstantFeedback** application.
 
-**InstantFeedback** connects to **ODataServer** at `https://localhost:5006/odata`. If the `5006` port is already in use, update URLs in [Program.cs](./CS/ODataServer/ODataServer/Program.cs#L9) and [OrdersContext.cs](./CS/InstantFeedback/InstantFeedback/Models/OrdersContext.cs#L5).
+**InstantFeedback** connects to **ODataServer** at `https://localhost:5006/odata`. If  port `5006` is already in use, update URLs in [Program.cs](./CS/ODataServer/ODataServer/Program.cs#L9) and [OrdersContext.cs](./CS/InstantFeedback/InstantFeedback/Models/OrdersContext.cs#L5).
 
 ## Implementation Details
 
-In this example, the DevExpress Blazor Grid retrieves data from an [OData](https://learn.microsoft.com/en-us/odata/) service. To bind our Blazor Grid component to such a service, you must:
+In this example, the DevExpress Blazor Grid retrieves data from an [OData](https://learn.microsoft.com/en-us/odata/) service. To bind our Blazor Grid component to this type of service, you must:
 
 1. Add the following NuGet package to your project: [Microsoft.OData.Client](https://www.nuget.org/packages/Microsoft.OData.Client/)
 
